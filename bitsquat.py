@@ -8,7 +8,7 @@ def transpose(character):
 	return map(lambda x: chr(b ^ (2 ** x)), xrange(8))
 
 
-domain_name = "mydomain.foo"
+domain_name = "jrc.no"
 valid_domains = []
 invalid_domains = 0
 registered_domains = []
@@ -44,10 +44,10 @@ for position, letter in enumerate(domain_name):
 			invalid_domains += 1
 
 
-print (str(len(valid_domains)) + " valid domains that are not yet registered.")
+print (str(len(valid_domains)-len(registered_domains)) + " valid domains that are not yet registered.")
 print (str(invalid_domains) + " invalid domains.")
+print (str(len(valid_domains) +" valid domains in total."))
 print (str(len(registered_domains)) + " registered domains:")
-
 map(print, registered_domains)
 
 
