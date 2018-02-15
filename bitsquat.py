@@ -8,7 +8,7 @@ def transpose(character):
 	return map(lambda x: chr(b ^ (2 ** x)), xrange(8))
 
 
-domain_name = "jrc.no"
+domain_name = "mydomain.foo"
 valid_domains = []
 invalid_domains = 0
 registered_domains = []
