@@ -1,6 +1,16 @@
 # Bitsquat
 
-Simple python script that prints valid unregistered bitsquat domains. Also prints valid registered and counts invalid bitsquat domains. 
+Simple script that prints _valid unregistered_ bitsquat domains. Also prints _valid registered_ and counts _invalid_ bitsquat domains. 
+
+## Usage 
+Edit `domain_name = "mydomain.foo"`  
+`python bitsquat.py`
+
+## Dependencies
+`pip install -r requirements.txt`
+
+## Domains
+List of valid top-level domains maintained by [IANA](https://www.icann.org/resources/pages/tlds-2012-02-25-en)
 
 # Acknowledgement
 
